@@ -18,14 +18,14 @@ then
     if [ $Manual = 1 ];
     then
 
-    java -jar /PaperServer/paper-1.8.8-445.jar
+    java -jar /NachoServer/NachoSpigot.jar
 
 fi
 
  if [ $Manual = 2 ];
     then
 
-    java -jar /PaperServer/paper-1.8.8-445.jar
+    java -jar /SpigotServer/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar
 
 fi
 
@@ -36,6 +36,37 @@ fi
     java -jar /PaperServer/paper-1.8.8-445.jar
 
 fi
+
+fi
+
+if [ $wbr1 = 2 ];
+then
+
+    if [ -d NachoSpigot  ];
+    then
+    echo "Nacho Server detected"
+    java -jar /NachoServer/NachoSpigot.jar
+
+    fi
+
+        if [ -d NachoSpigot  ];
+    then
+    echo "Spigot Server detected"
+    java -jar /SpigotServer/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar
+
+
+    fi
+
+        if [ -d NachoSpigot  ];
+    then
+
+    echo "Paper Server detected"
+    java -jar /PaperServer/paper-1.8.8-445.jar
+
+    fi
+
+
+
 
 fi
 
