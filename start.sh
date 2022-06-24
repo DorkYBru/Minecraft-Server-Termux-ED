@@ -9,7 +9,7 @@ read wbr1
 if [ $wbr1 = 1 ];
 then
     echo "Select what jar you want to run"
-    echo "1.NachoSpigot"
+    echo "1.WindSpigot"
     echo "2.Spigot"
     echo "3.PaperMC"
 
@@ -18,7 +18,7 @@ then
     if [ $Manual = 1 ];
     then
 
-    java -jar NachoServer/NachoSpigot.jar
+    java -jar WindServer/WindSpigot-2.1.2.jar
 
 fi
 
@@ -44,8 +44,8 @@ then
 
     if [ -d NachoServer  ];
     then
-    echo "Nacho Server detected"
-    java -jar NachoServer/NachoSpigot.jar
+    echo "Wind Server detected"
+    java -jar WindServer/WindSpigot-2.1.2.jar
 
     fi
 
