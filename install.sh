@@ -13,15 +13,15 @@ echo "3.PaperMC"
 read version
 
 paperlink="https://papermc.io/api/v2/projects/paper/versions/1.8.8/builds/445/downloads/paper-1.8.8-445.jar"
-nacholink="https://github.com/Wind-Development/WindSpigot/releases/download/v2.1.2-hotfix/WindSpigot-2.1.2.jar"
+windlink="https://github.com/Wind-Development/WindSpigot/releases/download/v2.1.2-hotfix/WindSpigot-2.1.2.jar"
 spigotlink="https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"
 
 
  if [ $version = 1 ];
     then
     mkdir WindServer
-    cd NachoServer
-    curl $nacholink
+    cd WindServer
+    curl $windlink
 fi
 
  if [ $version = 2 ];
